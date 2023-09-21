@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 13</title>
+    <style>
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        td:hover
+        {
+            background-color: yellow;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .background_tipe {
+            background-color: rgba(95, 95, 95, 0.774);
+            color: white;
+        }
+
+        div#container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>desafio 1</h1>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td> 
+            <td>9</td> 
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+          <td>13</td>
+            <td>14</td>
+            <td>15</td> 
+        </tr>
+    </table>
+    <h1>desafio 2</h1>
+    <table>
+        <tr>
+            <td colspan="4">a</td>
+            <td rowspan="4">b</td>            
+        </tr>
+        <tr>
+            <td rowspan="4">c</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+        </tr>
+        <tr>
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+        </tr>
+        <tr>
+            <td>j</td>
+            <td>l</td>
+            <td>m</td>
+        </tr>
+        <tr>
+            <td colspan="4">n</td>
+        </tr>
+    </table>
+
+    <!-- tabela de filmes favoritos -->
+    <table>
+        <caption>Filmes Favoritos</caption>
+
+        <thead>
+            <th scope="col">GRUPO</th>
+            <th scope="col">NOMES</th>
+            <th colspan="3" scope="colgroup">FILMES</th>            
+       </thead>
+        <!-- mulheres -->
+       <tbody>
+        <tr>
+            <th rowspan="3" scope="rowgroup">MULHERES</th>
+            <td>Ana Maria santos</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+        </tr>
+
+        <tr>
+            <td>Beatriz souza</td>
+            <td>hulk</td>
+            <td>inception</td>
+            <td>batman</td>
+        </tr>
+
+        <tr>        
+            <td>claudia melo</td>    
+            <td>oblivion</td>
+            <td>matrix</td>
+            <td>big hero</td>
+        </tr>
+    <TFoot>
+        <th colspan="4" scope="row">total</th>
+        <td>1000</td>
+    </TFoot>
+        <!-- homens -->
+        <tr>
+            <th rowspan="3" scope="rowgroup">HOMENS</th>
+            <td>Bruno Mendonça</td>
+            <td>intocáveis</td>
+            <td>amnésia</td>
+            <td>gladiador</td>
+        </tr>
+
+        <tr>
+            <td>Daniel lourenço</td>
+            <td>Wall-E</td>
+            <td>oldboy</td>
+            <td>Dangal</td>
+        </tr>
+
+        <tr>
+            <td >Fabiano Mota</td>
+            <td>Star Wars 5</td>
+            <td>taxi driver</td>
+            <td>toy Story</td>
+        </tr>
+
+    </tbody>
+    </table>
+
+    <!-- notas de alunos -->
+    <table>
+
+        <caption>Notas De Alunos</caption>
+        <tr>
+            <th class="background_tipe" rowspan="2" scope="rowgroup">Área</th>
+            <th class="background_tipe" rowspan="2" scope="rowgroup">Disciplinas</th>
+            <th class="background_tipe" colspan="2" scope="colgroup">Notas</th>            
+            <th class="background_tipe" rowspan="2" scope="rowgroup">Média</th>
+        </tr>
+        <tr>
+            <th class="background_tipe" colspan="0.2" scope="colgroup">Nota 1</th>
+            <th class="background_tipe" colspan="0.5" scope="colgroup">Nota 2</th>  
+        </tr>
+        <tr>
+            <th rowspan="4" scope="rowgroup">Exatas</th>
+            <td>Matemática</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+
+        <tr>
+            <td>Fisica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+
+        <tr>
+            <td>Quimica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+
+        <tr>
+            <td>Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+
+        <tr>
+            <th class="background_tipe" colspan="4" scope="colgroup">Média De Exatas</th>
+            <th class="background_tipe">0.0</th>
+        </tr>
+
+        <tr>
+            <th rowspan="3">Humanas</th>
+        </tr>
+
+        <tr>
+            <td>História</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+
+        <tr>
+            <td>Geografia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+
+        <tr>
+            <th class="background_tipe" colspan="4" scope="colgroup">Média De Humanas</th>
+            <th class="background_tipe">0.0</th>
+        </tr>
+    </table>
+     
+
+    <!-- tabelas utilizando o ano responsivel em celular -->
+    <div id="container">
+        <table>
+            <thead>
+            <caption>Meses & Dias</caption>
+            </thead>
+            <tbody>
+            <tr>
+                <th>Jan</th>
+                <th>Fev</th>
+                <th>Mar</th>
+                <th>Abr</th>
+                <th>Mai</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Ago</th>
+                <th>Set</th>
+                <th>Out</th>
+                <th>Nov</th>
+                <th>dez</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">25</td>
+                <td colspan="2">26</td>
+                <td colspan="2">27</td>
+                <td colspan="2">28</td>
+                <td colspan="2">29</td>
+                <td>30</td>
+                <td>31</td>
+            </tr>
+           </tbody>
+            <tfoot>
+                <th colspan="12">Final Do Calendario</th>
+            </tfoot>
+        </table>
+    </div>
+
+    <h1>acabou !!!</h1>
+</body>
+</html>
